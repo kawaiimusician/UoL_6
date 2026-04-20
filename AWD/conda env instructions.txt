@@ -1,0 +1,3 @@
+For running the virtual environment: conda activate advanced_web_dev
+
+to stop running: conda deactivate
