@@ -1,0 +1,29 @@
+[
+  {
+    "model": "newapp.menuitem",
+    "pk": 1,
+    "fields": {
+      "name": "Margherita Pizza",
+      "description": "Classic pizza with tomato sauce, mozzarella cheese, and fresh basil.",
+      "price": "8.99"
+    }
+  },
+  {
+    "model": "newapp.menuitem",
+    "pk": 2,
+    "fields": {
+      "name": "Pepperoni Pizza",
+      "description": "Pizza topped with tomato sauce, mozzarella cheese, and pepperoni slices.",
+      "price": "9.99"
+    }
+  },
+  {
+    "model": "newapp.menuitem",
+    "pk": 3,
+    "fields": {
+      "name": "Veggie Pizza",
+      "description": "Pizza with tomato sauce, mozzarella cheese, and a variety of fresh vegetables.",
+      "price": "10.99"
+    }
+  }
+]

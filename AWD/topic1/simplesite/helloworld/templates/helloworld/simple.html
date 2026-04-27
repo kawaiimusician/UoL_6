@@ -1,0 +1,11 @@
+{% extends 'helloworld/base.html' %}
+{% block content %}
+<h1>Simple View</h1>
+<p>
+  Name: {% resident_name.upper() %} <br>
+  Address: {{ address }}
+  {% if True %}
+  <p>Hello there!</p>
+  {% endif %}
+</p>
+{% endblock %}

@@ -10,4 +10,5 @@ def simple_view(request):
   addresses = Address.objects.all()
   first_address = addresses[0]
   resident_name = str(first_address.resident.name)
-  return HttpResponse(f'{resident_name} lives at {first_address.address}')
+  # return HttpResponse(f'{resident_name} lives at {first_address.address}')
+  return render(request, 'helloworld/simple.html', {'resident_name': resident_name, 'address': first_address.address})
