@@ -1,3 +1,8 @@
 For running the virtual environment: conda activate advanced_web_dev
 
 to stop running: conda deactivate
+
+
+to run a django project:
+1. route to the directory that contains manage.py
+2. use command `python manage.py runserver 127.0.0.1:8080`
