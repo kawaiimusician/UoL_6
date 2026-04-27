@@ -7,7 +7,7 @@ def index(request):
   return render(request, 'helloworld/index.html', {'data': response_string})
 
 def simple_view(request):
-  header = request.META
-  ip = header['REMOTE_ADDR']
-  html = "<html><body><h1>Your IP Address is: " + ip + "</h1></body></html>"
-  return HttpResponse(html, content_type="text/html", status=200)
+  addresses = Address.objects.all()
+  first_address = addresses[0]
+  resident_name = str(first_address.resident.name)
+  return HttpResponse(f'{resident_name} lives at {first_address.address}')
