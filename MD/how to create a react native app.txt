@@ -1,0 +1,8 @@
+To create a new app:
+1. Navigate to the directory you want your app to be in
+2. Run the command `npx create-expo-app {app name}`
+    - if you want a template append `--template {template name}`
+    - if you want a blank project append `--template blank`   *** USE THIS SO WE CAN GET RID OF TYPESCRIPT ***
+3. Remove typescript
+4. Your app is ready!
+
