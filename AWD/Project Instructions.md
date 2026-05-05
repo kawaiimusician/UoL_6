@@ -20,3 +20,16 @@ To load data to the database:
 to run a django project:
 1. once conda is running, route to the directory that contains manage.py
 2. use command `python manage.py runserver 127.0.0.1:8080`
+
+To log into postgres in the console use the following command: `psql -U postgres -d postgres`
+-U postgres logs you into the user "postgres" and -d puts you in the database called "postgres"
+When it asks for the password use the one in 1pass under "PostgreSQL Superuser"
+To exit postgres use `\q`
+
+Postgres Helpful Commands:
+\list               lists the databases
+\c {db name}        connects to the specified db
+\d                  describe the relation between tables
+\d {table name}     describes the specified table
+\! clear            clears console
+
