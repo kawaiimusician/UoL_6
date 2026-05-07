@@ -1,6 +1,8 @@
 For running the virtual environment: use the command `conda activate advanced_web_dev` when inside of UoL_6 folder
 to stop running: `conda deactivate`
 
+WSL: Use it instead! Open a folder in WSL by opening the WSL terminal and navigating to the folder. Then type `code .` to open the folder you are in.
+
 To create a Django project:
 1. route to the folder you want the project to be inside
 2. use command `django-admin startproject {proj name}`
@@ -21,10 +23,16 @@ to run a django project:
 1. once conda is running, route to the directory that contains manage.py
 2. use command `python manage.py runserver 127.0.0.1:8080`
 
-To log into postgres in the console use the following command: `psql -U postgres -d postgres`
--U postgres logs you into the user "postgres" and -d puts you in the database called "postgres"
-When it asks for the password use the one in 1pass under "PostgreSQL Superuser"
-To exit postgres use `\q`
+
+To start up postgres in WSL:
+`sudo service postgresql start`
+To stop postgres in WSL
+`sudo service postgresql stop`
+To check the status of postgres
+`sudo service postgresql status`
+
+To connect to DB:
+`sudo -u postgres psql`
 
 Postgres Helpful Commands:
 \list               lists the databases
@@ -32,4 +40,3 @@ Postgres Helpful Commands:
 \d                  describe the relation between tables
 \d {table name}     describes the specified table
 \! clear            clears console
-
