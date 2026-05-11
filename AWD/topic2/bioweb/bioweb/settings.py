@@ -25,12 +25,13 @@ SECRET_KEY = 'django-insecure-+ey^tq_9*&$kqnh-qat9=b+8g5=ls54_i-rm%%9g=ar^fv2cd=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.coursera-apps.org', 'localhost', '127.0.0.1']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'genedata.apps.GenedataConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
