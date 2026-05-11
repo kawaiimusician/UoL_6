@@ -3,6 +3,9 @@ to stop running: `conda deactivate`
 
 WSL: Use it instead! Open a folder in WSL by opening the WSL terminal and navigating to the folder. Then type `code .` to open the folder you are in.
 
+to start the virtual environment:
+`source {env name}/bin/activate`
+
 To create a Django project:
 1. route to the folder you want the project to be inside
 2. use command `django-admin startproject {proj name}`
