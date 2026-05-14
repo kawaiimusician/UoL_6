@@ -6,3 +6,5 @@ To create a new app:
 3. Remove typescript
 4. Your app is ready!
 
+to start project:
+npx expo start
